@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Jaldi&family=Jua&family=Kodchasan:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Jaldi&family=Jua&family=Kodchasan:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Itim&family=Jaldi&family=Jua&family=Kodchasan:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper h1 {
+  font-size: 3em;
+  font-family: "Jua";
+  color: #2f682e;
+  margin: 25px;
+}
+
+.wrapper h2 {
+  font-family: "Itim";
+}
+
+.wrapper p {
+  font-family: "Istok Web";
+}
+
+.content-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin-top: 30px;
+}
+.card-box {
+  min-height: 220px;
+  width: 380px;
+  padding: 30px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  margin: 10px 4px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+  
+  
+}
+.card-box i {
+  margin: 20px;
+  color: #581ed6;
+}
+.card-box h2 {
+  margin-bottom: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+.card-box p {
+  color: #6c757d;
+  text-align: center;
+}
+.card-box:hover i,
+.card-box:hover p {
+  color: #fff;
+}
+.card-box:hover h2 {
+  font-weight: 600;
+}
+.card-box:nth-child(1):hover {
+  background: linear-gradient(
+      45deg,
+      rgba(88, 70, 159, 0.7) 0%,
+      rgba(136, 113, 199, 0.7) 100%
+    ),
+    url("img/bg1.png");
+  background-size: cover;
+  
+
+  
+}
+.card-box:nth-child(2):hover {
+  background: linear-gradient(
+      45deg,
+      rgba(88, 70, 159, 0.7) 0%,
+      rgba(136, 113, 199, 0.7) 100%
+    ),
+    url("img/bg2.jpg");
+  background-size: cover;
+ 
+
+  
+}
+.card-box:nth-child(3):hover {
+  background: linear-gradient(
+      45deg,
+      rgba(88, 70, 159, 0.7) 0%,
+      rgba(136, 113, 199, 0.7) 100%
+    ),
+    url("img/bg3.jpg");
+  background-size: cover;
+}
+.card-box:nth-child(4):hover {
+  background: linear-gradient(
+      45deg,
+      rgba(88, 70, 159, 0.7) 0%,
+      rgba(136, 113, 199, 0.7) 100%
+    ),
+    url("img/bg1.png");
+  background-size: cover;
+}
+.card-box:nth-child(5):hover {
+  background: linear-gradient(
+      45deg,
+      rgba(88, 70, 159, 0.7) 0%,
+      rgba(136, 113, 199, 0.7) 100%
+    ),
+    url("img/bg2.jpg");
+  background-size: cover;
+}
+.card-box:nth-child(6):hover {
+  background: linear-gradient(
+      45deg,
+      rgba(88, 70, 159, 0.7) 0%,
+      rgba(136, 113, 199, 0.7) 100%
+    ),
+    url("img/bg3.jpg");
+  background-size: cover;
+}
+
+.More-Services {
+  border: 1px solid #2f682e;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "Jua";
+  cursor: pointer;
+  margin: 40px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+  border-radius: 15px;
+  color: #2f682e;
+}
+.btn1,
+.btn2 {
+  color: #2f682e;
+}
+.btn3,
+.btn4 {
+  color: #2f682e;
+}
+.btn1:hover,
+.btn2:hover {
+  color: #fff;
+}
+.btn3:hover,
+.btn4:hover {
+  color: #3498db;
+}
+.More-Services::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #2f682e;
+  z-index: -1;
+  transition: 0.8s;
+}
+.btn1::before,
+.btn3::before {
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+.btn2::before,
+.btn4::before {
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+.btn3::before,
+.btn4::before {
+  height: 180%;
+}
+.btn1:hover::before,
+.btn2:hover::before {
+  height: 180%;
+}
+.btn3:hover::before,
+.btn4:hover::before {
+  height: 0%;
+}
+
+@media (max-width: 1217px) {
+    .wrapper {
+      padding: 25px;
+    }
+    .wrapper h1 {
+      font-size: 2.5em;
+      font-weight: 600;
+    }
+    .content-box {
+      flex-direction: row; /* Set to row for two columns */
+      justify-content: space-around; /* Adjust as needed for spacing between columns */
+      width: 100%;
+    }
+    .card-box {
+      min-width: calc(50% - 20px); /* Set minimum width for two columns with margin */
+      margin: 15px 0;
+    }
+  }
+  
+
