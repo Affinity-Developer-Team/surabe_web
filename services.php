@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Services</title>
-    <link rel="stylesheet" href="style.css" class="css" />
+    <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <!-- FONT AWESOME LINK USING BOXICON -->
     <link
