@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&family=Jua&family=Kodchasan:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Jaldi&family=Jua&family=Kodchasan:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Itim&family=Jaldi&family=Jua&family=Kodchasan:wght@200&display=swap');
+.ha{
+    font-family: Jua;
+    color: #2F682E;
+
+}
+
+.myp{
+    font-family: Istok Web;
+    color: black;
+    font-weight: 300;
+}
+.bn{
+    padding: 10px 10px;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    font-family: itim;
+    
+    color: white;
+}
+.bn1{
+    background-color: #1877F2;
+
+}
+.bn2{
+    background-color: #075e54;
+}
+.bne{
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #C9F8C8;
+    font-weight:500;
+    font-family: Istok Web;
+    
+}
