@@ -233,6 +233,11 @@ background-size: cover;
     font-family: Istok Web;
     
 }
+.fthadder{
+  font-family: Istok Web;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
 
 @media (max-width: 1217px) {
     .wrapper {
