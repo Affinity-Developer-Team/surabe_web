@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jaldi&family=Jua&family=Kodchasan:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Jaldi&family=Jua&family=Kodchasan:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Itim&family=Jaldi&family=Jua&family=Kodchasan:wght@200&display=swap");
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --bodyBg:#c9f8c8;
+    --formBg:#000000;
+    
+    --primaryColor:#2f682e;
+    --paraColor:#5e6c79;
+    --paraColor:#000000;
+
+}
+
+body{
+    font-family: 'Roboto Serif', serif;
+    color: var(--textColor);
+    background: var(--bodyBg);
+    padding-bottom: 5em;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    max-width: 550px;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.sectionHeader{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: jua;
+    color: #2f682e;
+    margin-bottom: .5em;
+    font-size: 50px;
+}
+
+.heading,.sub-heading{
+    margin-bottom: .5em;
+    font-weight: bold;
+    font-family: "Itim";
+}
+
+.heading{
+    font-size: 2.5em;
+}
+
+.sub-heading{
+    text-align: left;
+}
+
+.contactForm{
+    display: grid;
+    gap: 3em;
+}
+
+form{
+    width: 100%;
+    margin-top: 3em;
+}
+
+.para{
+    color: var(--paraColor);
+    font-size: 1.1rem;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    font-family: "Itim";
+}
+
+.para2{
+    text-align: left;
+}
+
+.input{
+    width: 95%;
+    max-width: 700px;
+    border: none;
+    font-size: .9rem;
+    padding: 1em;
+    outline: none;
+    background-color: rgb(255, 253, 253);
+    color: var(--paraColor);
+    border-radius: 10px;
+    border: 1px solid rgb(53, 53, 53);
+    margin-bottom: 1em;
+
+}
+
+.input:focus{
+    border: 1px solid var(--primaryColor);
+}
+
+.input::placeholder{
+    text-transform: capitalize;
+}
+
+.submit{
+    background-color: var(--primaryColor);
+    border: none;
+    color: var(--textColor);
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.map-container{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.mapBg{
+    position: absolute;
+    background-color: var(--primaryColor);
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 90%;
+    border-radius: 20px;
+}
+
+.map{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contactMethod{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    text-align: left;
+}
+
+.method{
+    display: flex;
+    align-items: center;
+}
+
+.contactIcon{
+    font-size: 2rem;
+    color: black;
+    width: 70px;
+}
+
+
+.send-btn {
+    border: 1px solid #2f682e;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "Jua";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 15px;
+    color: #2f682e;
+    margin-left: -2px;
+  }
+  .btn1,
+  .btn2 {
+    color: #2f682e;
+  }
+  .btn3,
+  .btn4 {
+    color: #2f682e;
+  }
+  .btn1:hover,
+  .btn2:hover {
+    color: #fff;
+  }
+  .btn3:hover,
+  .btn4:hover {
+    color: #3498db;
+  }
+  .send-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #2f682e;
+    z-index: -1;
+    transition: 0.8s;
+  }
+  .btn1::before,
+  .btn3::before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+  }
+  .btn2::before,
+  .btn4::before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+  }
+  .btn3::before,
+  .btn4::before {
+    height: 180%;
+  }
+  .btn1:hover::before,
+  .btn2:hover::before {
+    height: 180%;
+  }
+  .btn3:hover::before,
+  .btn4:hover::before {
+    height: 0%;
+  }
+
+@media screen and (min-width:800px) {
+    section{
+        max-width: 1100px;
+    }
+    .contactForm{
+        grid-template-columns: 1fr 1fr;
+    }   
+
+    .contactMethod{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
