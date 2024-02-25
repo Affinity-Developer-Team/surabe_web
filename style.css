@@ -1,6 +1,10 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Jaldi&family=Jua&family=Kodchasan:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Jaldi&family=Jua&family=Kodchasan:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Itim&family=Jaldi&family=Jua&family=Kodchasan:wght@200&display=swap");
+@import url("https://https://github.com/Affinity-PR-01/surabe_web/pull/5/conflict?name=style.css&base_oid=347bf745ebe246cc01bd7ce71b8252d1378675f0&head_oid=eb693603c6c182c72c9ae912b63cad94918c2ac2fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Itim&family=Jaldi&family=Jua&family=Kodchasan:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&family=Jua&family=Kodchasan:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Jaldi&family=Jua&family=Kodchasan:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Itim&family=Jaldi&family=Jua&family=Kodchasan:wght@200&display=swap');
 
 * {
   margin: 0;
@@ -192,6 +196,43 @@ background-size: cover;
 .btn4:hover::before {
   height: 0%;
 }
+.ha{
+    font-family: Jua;
+    color: #2F682E;
+
+}
+
+.myp{
+    font-family: Istok Web;
+    color: black;
+    font-weight: 300;
+}
+.bn{
+    padding: 10px 10px;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    font-family: itim;
+    
+    color: white;
+}
+.bn1{
+    background-color: #1877F2;
+
+}
+.bn2{
+    background-color: #075e54;
+}
+.bne{
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #C9F8C8;
+    font-weight:500;
+    font-family: Istok Web;
+    
+}
 
 @media (max-width: 1217px) {
     .wrapper {
@@ -212,4 +253,5 @@ background-size: cover;
     }
   }
   
+
 
