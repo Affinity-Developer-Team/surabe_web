@@ -8,12 +8,27 @@
 </head>
 
 <body>
-    
+
+<?php include "Header.php"; ?>
+
+<?php include "Home.php"; ?>
+
+<br> <br> <br><br> <br> <br>
+
+<?php include "about_us.php"; ?>
+
+<br> <br> <br><br> <br> <br>
+
 <?php include "services.php"; ?>
 
 <br> <br> <br><br> <br> <br>
 
 <?php include "contact.php"; ?>
+
+<br> <br> <br><br> <br> <br>
+
+<?php include "footer.php"; ?>
+
 </body>
 
 </html>

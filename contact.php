@@ -23,7 +23,7 @@
          <input type="email" class="input" placeholder="your Email">
          <textarea class="input" cols="30" rows="5" placeholder="Your message..."></textarea>
          
-            <button class="send-btn btn2 ">     More Services</button>
+            <button class="send-btn btn2 ">More Services</button>
        
         </form>
 
