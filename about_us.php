@@ -32,7 +32,7 @@
                 </p>
                 <div class="row">
                     <div class="col-6 d-flex justify-content-end">
-                        <button class="bn bn1"><i class="fa-brands fa-facebook"></i> Face Book</button>
+                        <button class="bn bn1"><i class="fa-brands fa-facebook"></i> FaceBook</button>
 
                     </div>
                     <div class="col-6">
