@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="container-fluid" style="background-color: #2f682e">
+    <div class="container-fluid" style="background-color: #2f682e;">
         <div class="container">
             <div class="content row d-flex align-content-center" style="height: 60vh; width: 100%">
                 <h2 class="text-light text-center fthadder">SURABE CLINIC</h2>

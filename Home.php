@@ -11,12 +11,11 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row home_div">
 
             <!-- Left Column -->
             <div class="col-lg-7 col-md-12 d-flex align-items-center" style="background-color: #C9F8C8; height: 600px;">
                 <div class="container">
-                    <!-- <div class="row"> -->
                         <div class="col-12">
                             <p class="home-header">SURABE</p>
                         </div>
@@ -43,7 +42,6 @@
                                 </div>
                             </div>
                         </div>
-                    <!-- </div> -->
                 </div>
             </div>
 
