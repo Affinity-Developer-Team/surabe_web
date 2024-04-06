@@ -232,7 +232,8 @@ background-size: cover;
     border: none;
     outline: none;
     border-radius: 10px;
-    background-color: #C9F8C8;
+    background-color: #2F682E;
+    color: #C9F8C8;
     font-weight:500;
     font-family: Istok Web;
     
@@ -262,6 +263,35 @@ background-size: cover;
     }
   }
 
+  header {
+    background: transparent;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease;
+    overflow: visible;
+}
+
+header.scrolled {
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+header a.header-topics {
+    margin: 0 15px;
+    color: black; /* Initial color for header topics */
+}
+
   .header-topics{
 
     font-family: Itim;
@@ -270,6 +300,7 @@ background-size: cover;
   .home-header{
     font-family: Italiana;
     font-size: 100px;
+    margin-bottom: -20px;
   }
 
   .home-subheader{
@@ -357,8 +388,94 @@ background-size: cover;
   color: #C9F8C8;
 }
 
+.home_div{
+  overflow: hidden;
+  position: relative;
+    width: 100%;
+    top: 0;
+    z-index: 900;
+}
 
+/* diluna */
 
-  
+.mn{
+  font-family: itim;
+}
 
+.bg{
+  background-image: linear-gradient(to right, #C9F8C8 60%, #2f682e 40% );
+}
+.bt{
+  padding: 5px 25px;
+  border: 2px solid #2F682E;
+  border-radius: 50px;
+  background-color: #2F682E;
+  color: white;
+ 
+}
+.hadder-top{
+  font-family:  italiana;
+  font-size: 100px;
+}
+.hadder-top-2{
+  font-family:  jacques Francois Shadow;
+  font-size: 60px;
+}
+.pa{
+  font-family: Istok Web;
+}
+.bt-2{
+  border: 2px solid #2F682E;
+  color: #2F682E;
+  background-color: transparent;
+}
+@media (max-width:370px){
+  .hadder-top{
+    
+    font-size: 80px;
+  }
+  .hadder-top-2{
+    
+    font-size: 60px;
+  }
 
+}
+@media (max-width:300px){
+  .hadder-top{
+    
+    font-size: 60px;
+  }
+  .hadder-top-2{
+    
+    font-size: 40px;
+  }
+
+}
+@media (max-width:373px){
+  .bt-2{
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+  }
+ 
+
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: calc(100vh - 120px); /* Adjust based on your header's height */
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
+  background-color: #2f682e;
+  color: white;
+  padding: 20px 0;
+}
