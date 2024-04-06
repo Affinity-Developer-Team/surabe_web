@@ -104,7 +104,7 @@
                             <div class="row">
                                 <div class="col-12 d-flex justify-content-start mb-2">
                                     <div class="button-container me-2">
-                                        <a href="#" class="animated-button">Register</a>
+                                        <a href="registrations.php" class="animated-button">Register</a>
                                     </div>
                                     <div class="button-container">
                                         <a href="#" class="animated-button2">Booking</a>
