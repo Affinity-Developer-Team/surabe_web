@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Jaldi&family=Jua&family=Kodchasan:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Jaldi&family=Jua&family=Kodchasan:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Itim&family=Jaldi&family=Jua&family=Kodchasan:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Jacques+Francois+Shadow&display=swap");
+
+.surabe-reg {
+  font-family: jacques Francois shadow;
+  font-size: 40px;
+}
+
+.surabe-reg-1 {
+  font-family: italiana;
+  color: white;
+}
+
+.reg-text {
+  font-family: jacques Francois shadow;
+  font-size: 50px;
+  color: white;
+}
+
+.reg-home {
+  margin-top: 200px; /* Adjust the value as needed for the top margin */
+  margin-bottom: 220px; /* Adjust the value as needed for the bottom margin */
+}
+
+.reg-dis {
+  font-family: istok web;
+  color: white;
+  font-size: 14px;
+}
+
+
+
+.input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  
+}
+
+
+
+  
