@@ -10,25 +10,25 @@
 </head>
 
 <body style="overflow-x: hidden; background-color: #c9f8c8">
-    <header class="navbar navbar-expand-lg navbar-light">
+    <header class="navbar navbar-expand-lg ">
         <div class="container">
-            <a href="#" class="header-topics text-black">Brand Name/Logo</a>
+            <a href="#" class="header-topics text-light">Brand Name/Logo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="#" class="nav-link header-topics active" aria-current="page">Home</a>
+                        <a href="index.php" class="nav-link header-topics active" aria-current="page">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link header-topics active">About</a>
+                        <a href="index.php" class="nav-link header-topics active">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link header-topics active">Packages</a>
+                        <a href="index.php" class="nav-link header-topics active">Packages</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link header-topics active">Contact</a>
+                        <a href="index.php" class="nav-link header-topics active">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -49,7 +49,7 @@
             } else {
                 header.classList.remove("scrolled");
                 topics.forEach(function(topic) {
-                    topic.style.color = "black"; // Change to your desired initial color
+                    topic.style.color = "white"; // Change to your desired initial color
                 });
             }
         });

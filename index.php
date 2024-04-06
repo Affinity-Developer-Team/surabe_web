@@ -57,7 +57,7 @@
     </div>
     <header class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a href="#" class="header-topics text-black">Surabe Clinic</a>
+            <a href="#" class="header-topics text-light">Surabe Clinic</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -291,7 +291,7 @@
             } else {
                 header.classList.remove("scrolled");
                 topics.forEach(function(topic) {
-                    topic.style.color = "black"; // Change to your desired initial color
+                    topic.style.color = "white"; // Change to your desired initial color
                 });
             }
         });
