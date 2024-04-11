@@ -70,7 +70,7 @@
                         <a href="#" class="nav-link header-topics active">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link header-topics active">Packages</a>
+                        <a href="video_portal.php" class="nav-link header-topics active">V Portal</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link header-topics active">Contact</a>
