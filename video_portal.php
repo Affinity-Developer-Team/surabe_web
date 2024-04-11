@@ -14,9 +14,9 @@
         .navbar.scrolled {
             padding-top: 0px;
             padding-bottom: 0px;
-            background-color: #f8f9fa !important;
+            background-color: black !important;
             /* Slightly different shade to indicate active state */
-            transition: background-color 0.4s, padding-top 0.4s, padding-bottom 0.4s;
+            transition: background-color 0.7s, padding-top 0.6s, padding-bottom 0.6s;
             /* Smooth transition */
         }
 
@@ -42,13 +42,9 @@
             color: #ccc;
             /* Lighter gray text for card titles and text */
         }
-        .navbar li a{
-            color: #2F682E;
-            font-weight: bold;
-        }
-        .navbar-brand{
-            color:#2F682E;
-        }
+
+       
+        
     </style>
 
 </head>
@@ -56,7 +52,7 @@
 <body style="background-color: #1f3147;">
 
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg  bg-dark fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-dark  bg-dark fixed-top" id="mainNav">
             <a class="navbar-brand" href="#pageTop">Surabe-Acadany</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -84,8 +80,8 @@
     <div class="container-fluid mt-5 pt-5">
         <section class="se01" id="sec01" style="width: 100%; height: 100vh;">
             <div class="row">
-                <div class="col-12 ">
-                    <h1 class="text-light ms-5">Welcome Surabe Academy</h1>
+                <div class="col-12 p-3">
+                    <h1 class="text-light">Welcome Surabe Academy</h1>
 
                     <h2 class="mb-4 text-info">Featured Videos</h2>
                     <div class="row">
@@ -152,9 +148,19 @@
 
 
         </section>
+       <div class="fixed-bottom text-center">
+        <small class="text-secondary">@Surabe Clinic & @Surabe Academy</small>
+
+       </div>
+
+
+
+
+
 
 
     </div>
+
 
 
 
