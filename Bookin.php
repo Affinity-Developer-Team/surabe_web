@@ -7,6 +7,7 @@
   <title>SURABE Clinic Booking</title>
   <link rel="stylesheet" href="css/test.css">
 
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <style>
@@ -22,18 +23,13 @@
 
 <body>
 
-
-
-  <!-- Your existing content -->
+  <!-- Header -->
   <div>
     <?php include 'Header.php' ?>
   </div>
+
   <!-- Left side: SURABE Clinic info -->
-
   <div>
-
-
-
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-6 col-md-12 col-12 d-flex justify-content-center align-items-center" style="background-color: #2f682e;">
@@ -63,7 +59,7 @@
               <h2 class="mb-4 bookin" style=" margin-bottom: 35px; margin-top: 100px;">Set Your Booking</h2>
             </center>
             <br> <br>
-            <form>
+            <form id="bookingForm">
               <div class="row">
                 <div class="col-md-6 mt-4">
                   <div class="mb-4">
@@ -87,25 +83,127 @@
           </div>
         </div>
       </div>
-
     </div>
+  </div>
 
-    
+  <!-- Footer -->
+  <?php include 'footer.php' ?>
 
-    <?php include 'footer.php' ?>
+  <!-- Bootstrap JS -->
 
+
+
+ 
+
+  <!-- Bootstrap modal for registration form -->
+  <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="registrationModalLabel">Register</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number:</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message:</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+            </div>
+          </form>
+        </div>
+
+        <!-- Modal Footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="sendButton">Send</button>
+        </div>
+      </div>
+    </div>
   </div>
 
 
-  <!-- Include Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  <script>
-    // Hide loading animation when everything is loaded
-    window.addEventListener('load', function() {
-      var loading = document.getElementById('loading');
-      loading.style.display = 'none';
+
+
+
+
+
+
+  <div class="modal fade" id="emailVerificationModal" tabindex="-1" aria-labelledby="emailVerificationModalLabel" aria-hidden="true">
+    <!-- Modal content -->
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="emailVerificationModalLabel">Email Verification</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <p>Please enter the verification code sent to your email:</p>
+          <div class="mb-3">
+            <label for="verificationCode" class="form-label">Verification Code:</label>
+            <input type="text" class="form-control" id="verificationCode" placeholder="Enter verification code">
+          </div>
+        </div>
+
+        <!-- Modal Footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="verifyButton">Verify</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  < <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+    var verifyButton = document.getElementById('verifyButton');
+    verifyButton.addEventListener('click', function() {
+
+    alert('Verification successful! Your email has been verified.');
+
     });
-  </script>
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+    var confirmBtn = document.querySelector('#bookingForm button[type="submit"]');
+    confirmBtn.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Show the registration modal
+    var modal = new bootstrap.Modal(document.getElementById('registrationModal'));
+    modal.show();
+    });
+
+    var sendBtn = document.querySelector('#sendButton');
+    sendBtn.addEventListener('click', function() {
+    // Close the registration modal
+    var registrationModal = document.getElementById('registrationModal');
+    var modal = bootstrap.Modal.getInstance(registrationModal);
+    modal.hide();
+
+    // Show the email verification modal
+    var emailModal = new bootstrap.Modal(document.getElementById('emailVerificationModal'));
+    emailModal.show();
+    });
+    });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 
 </html>
