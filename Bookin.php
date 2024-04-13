@@ -35,10 +35,10 @@
         <div class="col-lg-6 col-md-12 col-12 d-flex justify-content-center align-items-center" style="background-color: #2f682e;">
           <div class="content col-lg-6 col-11">
             <div class="reg-home">
-              <p style="font-size: 70px" class="surabe-reg-1">
+              <p style="font-size: 70px" class="surabe-reg-1 mb-1">
                 SURABE <span class="surabe-reg">Clinic</span>
               </p>
-              <p class="reg-text">Patient</p>
+              <p class="reg-text mb-1 mt-1">Patient</p>
               <p class="reg-text">Booking</p>
               <p class="reg-dis">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
@@ -89,118 +89,19 @@
   <!-- Footer -->
   <?php include 'footer.php' ?>
 
-  <!-- Bootstrap JS -->
+  
 
 
 
  
 
-  <!-- Bootstrap modal for registration form -->
-  <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h5 class="modal-title" id="registrationModalLabel">Register</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
+  
 
-        <!-- Modal Body -->
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email:</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter your email">
-            </div>
-            <div class="mb-3">
-              <label for="phone" class="form-label">Phone Number:</label>
-              <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message:</label>
-              <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
-            </div>
-          </form>
-        </div>
+   <script>
+  
 
-        <!-- Modal Footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" id="sendButton">Send</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-  <div class="modal fade" id="emailVerificationModal" tabindex="-1" aria-labelledby="emailVerificationModalLabel" aria-hidden="true">
-    <!-- Modal content -->
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h5 class="modal-title" id="emailVerificationModalLabel">Email Verification</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-
-        <!-- Modal Body -->
-        <div class="modal-body">
-          <p>Please enter the verification code sent to your email:</p>
-          <div class="mb-3">
-            <label for="verificationCode" class="form-label">Verification Code:</label>
-            <input type="text" class="form-control" id="verificationCode" placeholder="Enter verification code">
-          </div>
-        </div>
-
-        <!-- Modal Footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" id="verifyButton">Verify</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  < <script>
-    document.addEventListener('DOMContentLoaded', function() {
-
-    var verifyButton = document.getElementById('verifyButton');
-    verifyButton.addEventListener('click', function() {
-
-    alert('Verification successful! Your email has been verified.');
-
-    });
-    });
-
-
-    document.addEventListener('DOMContentLoaded', function() {
-    var confirmBtn = document.querySelector('#bookingForm button[type="submit"]');
-    confirmBtn.addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent form submission
-
-    // Show the registration modal
-    var modal = new bootstrap.Modal(document.getElementById('registrationModal'));
-    modal.show();
-    });
-
-    var sendBtn = document.querySelector('#sendButton');
-    sendBtn.addEventListener('click', function() {
-    // Close the registration modal
-    var registrationModal = document.getElementById('registrationModal');
-    var modal = bootstrap.Modal.getInstance(registrationModal);
-    modal.hide();
-
-    // Show the email verification modal
-    var emailModal = new bootstrap.Modal(document.getElementById('emailVerificationModal'));
-    emailModal.show();
-    });
-    });
+ 
+  
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
