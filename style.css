@@ -258,9 +258,15 @@ background-size: cover;
       margin: 15px 0;
     }
   }
+
+
+  header {
+    background: #2F682E;
+
 /* 
    header {
     background: transparent;
+
     padding: 15px;
     position: fixed;
     width: 100%;
@@ -271,7 +277,7 @@ background-size: cover;
 }
 
 header.scrolled {
-    background: transparent;
+    background: #2F682E;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -285,7 +291,7 @@ header a {
 
 header a.header-topics {
     margin: 0 15px;
-    color: black; /* Initial color for header topics */
+    color: white; /* Initial color for header topics */
 }
 
   .header-topics{
