@@ -238,11 +238,7 @@ background-size: cover;
     font-family: Istok Web;
     
 }
-.fthadder{
-  font-family: Istok Web;
-  letter-spacing: 0.5px;
-  font-weight: bold;
-}
+
 
 @media (max-width: 1217px) {
     .wrapper {
@@ -263,8 +259,14 @@ background-size: cover;
     }
   }
 
+
   header {
+    background: #2F682E;
+
+/* 
+   header {
     background: transparent;
+
     padding: 15px;
     position: fixed;
     width: 100%;
@@ -275,7 +277,7 @@ background-size: cover;
 }
 
 header.scrolled {
-    background: transparent;
+    background: #2F682E;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -284,12 +286,12 @@ header.scrolled {
 header a {
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s ease; /* Smooth transition for color change */
-}
+    transition: color 0.3s ease; 
+} /* Smooth transition for color change */
 
 header a.header-topics {
     margin: 0 15px;
-    color: black; /* Initial color for header topics */
+    color: white; /* Initial color for header topics */
 }
 
   .header-topics{
@@ -301,7 +303,7 @@ header a.header-topics {
     font-family: Italiana;
     font-size: 100px;
     margin-bottom: -20px;
-  }
+  } 
 
   .home-subheader{
     font-family: Jacques Francois Shadow;
