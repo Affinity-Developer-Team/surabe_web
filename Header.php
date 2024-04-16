@@ -8,7 +8,7 @@
     
     <style>
         header {
-            background: transparent;
+            background: #2F682E;
             padding: 15px;
             position: fixed;
             width: 100%;
@@ -19,7 +19,7 @@
         }
 
         header.scrolled {
-            background: transparent;
+            background: #2F682E;
             backdrop-filter: blur(20px);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             position: fixed;

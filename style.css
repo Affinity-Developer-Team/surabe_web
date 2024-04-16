@@ -264,9 +264,9 @@ background-size: cover;
     background: #2F682E;
   }
 
-/* 
+
    header {
-    background: transparent;
+    background: #2F682E;
 
     padding: 15px;
     position: fixed;
@@ -288,12 +288,12 @@ header a {
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease; 
-} /* Smooth transition for color change */
+}
 
 header a.header-topics {
     margin: 0 15px;
-    color: white; /* Initial color for header topics */
-}
+    color: white;
+} 
 
   .header-topics{
 
